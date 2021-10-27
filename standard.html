@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      input {
+        width: 3em;
+      }
+      </style>
+  </head>
+  <body>
+
+    <input type="number" id="A" value="1" title="A"> x +
+    <input type="number" id="B" value="1" title="B"> y =
+    <input type="number" id="C" value="1" title="C">
+<p>
+Slope incercept Form: <br>
+<div id="output"></div>
+
+  </body>
+  <script type="text/javascript">
+
+
+  function stdToSI(){
+    A = document.getElementById("A").value;
+    B = document.getElementById("B").value;
+    C = document.getElementById("C").value;
+
+
+    // do the math
+      m = -A/B;
+      b = C/B;
+
+
+
+      txt = `y = ${m} x + ${b}`
+      document.getElementById("output").innerHTML = txt;
+}
+stdToSI();
+
+
+element = document.getElementById("A");
+console.log(element);
+element.addEventListener("change", stdToSI());
+
+    </script>
+</html>

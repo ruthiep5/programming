@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      input {
+        width: 3em;
+      }
+      </style>
+  </head>
+  <body>
+
+    y =
+    <input type="number" id="m" value="5" title="m"> x +
+    <input type="number" id="b" value="1" title="b">
+
+
+<div id="output"></div>
+
+
+  </body>
+  <script type="text/javascript">
+    m = document.getElementById("m").value;
+    console.log(m);
+
+    b = document.getElementById("b").value;
+    console.log(b);
+
+
+    // do the math
+  A = -m
+  B = 1
+  C = b
+
+
+
+      txt = `${A}x + ${B}y = ${C}`
+      document.getElementById("output").innerHTML = txt;
+
+    </script>
+</html>

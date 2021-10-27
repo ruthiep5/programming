@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<h1>
+Find Surface Areas and Volumes of a Sphere
+
+</h1>
+
+      Radius =
+      <input type="number" id="r" value="1">
+
+      <div id="answer">
+        </div>
+
+
+  </body>
+
+
+  <script type="text/javascript">
+
+    // get equation
+      r = document.getElementById("r").value;
+      console.log(r);
+
+    // do the math
+
+    SA = 4*3.14*r**2
+    console.log(SA);
+
+    txt = "Surface Area =" + SA;
+    document.getElementById("answer").innerHTML = txt;
+
+
+
+
+  </script>
+
+
+</html>
